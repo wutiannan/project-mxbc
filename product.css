@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1349px;
+}
+
+li {
+  list-style: none;
+}
+
+.top {
+  height: 68px;
+}
+.pg-title {
+  text-align: center;
+}
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  transition: all 0.5s;
+}
+.img-lf {
+  position: absolute;
+  top: 1150px;
+  left: 50px;
+}
+
+.img-rh {
+  position: absolute;
+  top: 1150px;
+  right: 50px;
+}
+.focus {
+  position: relative;
+  left: 50%;
+  overflow: hidden;
+  width: 650px;
+  height: 400px;
+  margin: 50px 0 50px -325px;
+}
+
+.focus ul {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+}
+
+.focus ul li {
+  list-style: none;
+  float: left;
+}
+
+.focus ul li img {
+  width: 100%;
+}
+
+.arrow-l,
+.arrow-r {
+  font-family: "icomoon";
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 24px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.arrow-l:hover {
+  color: red;
+}
+
+.arrow-r:hover {
+  color: red;
+}
+
+.arrow-r {
+  right: 0;
+}
+
+.circle {
+  position: absolute;
+  bottom: 20px;
+  left: 285px;
+}
+
+.circle li {
+  list-style: none;
+  float: left;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e40055;
+  margin: 0 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.current {
+  background-color: #e40055;
+}
+
+.process,
+.series {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.pg-dec {
+  margin: auto;
+  position: relative;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pg-dec_left,
+.pg-dec_right {
+  width: 24px;
+  height: 4px;
+  margin-top: 60px;
+}
+
+.pg-dec_left {
+  background: url(img/icon-9.svg);
+}
+
+.pg-dec_right {
+  background: url(img/icon-10.svg);
+}
+
+.pg-title {
+  margin: 14px 0 50px;
+  font-size: 42px;
+  color: #e40055;
+  font-weight: 700;
+}
+
+.pg-img img {
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.pic2 {
+  margin: 0 30px;
+}
+
+.slick-track img {
+  width: 100%;
+}
+
+.list-filtrate {
+  width: 65%;
+  height: 46px;
+  border-radius: 30px;
+  background-color: #f8f8f8;
+  margin: 80px auto 0;
+  box-sizing: border-box;
+}
+
+.list-filtrate ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-filtrate li {
+  cursor: pointer;
+  width: 25%;
+  text-align: center;
+  list-style: none;
+  line-height: 46px;
+  color: #555;
+  font-size: 14px;
+}
+
+.list-filtrate .current {
+  background-color: #e40055;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.ice-img {
+  margin: 30px 40px 0;
+}
+
+.ice-img ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ice-img ul:nth-child(n) {
+  display: none;
+}
+
+.ice-img ul.ice-current {
+  display: flex;
+}
+
+.ice-img li:nth-child(1) {
+  position: relative;
+  width: 50%;
+}
+
+.ice-img li:nth-child(n + 2) {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 25%;
+}
+
+.ice-img li img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.ice-img .ice-hide {
+  /* display: none; */
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: -200px;
+  transition: all 0.5s;
+}
+
+.ice-hide .icon-hide {
+  left: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.ice-img .ice-hide p {
+  position: absolute;
+  left: 30px;
+  color: #fff;
+}
+
+.ice-img .ice-hide .tit-top {
+  top: 60px;
+}
+
+.ice-img .ice-hide .tit-middle {
+  font-size: 14px;
+  top: 92px;
+}
+
+.ice-img .ice-hide .tit-bottom {
+  font-size: 14px;
+  top: 112px;
+}
+
+.ice-hide .icon-small {
+  position: absolute;
+  bottom: 16px;
+  right: 22px;
+  width: 20%;
+}
+
+.ice-img article {
+  position: absolute;
+  right: 12.5%;
+  top: 34.78261%;
+}
+
+.ice-img article h1 {
+  color: #e40055;
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+.ice-img article p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.875;
+}
+
+.ice-img li:nth-child(n + 2) .tit {
+  position: absolute;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: #e40055;
+  left: 50%;
+  bottom: 18px;
+  font-weight: 700;
+  transform: translateX(-50%);
+}
+
+/* more模块 */
+
+.more {
+  position: relative;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.knowledge {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: -40px;
+  width: 1200px;
+  font-size: 130px;
+  font-family: "NothingYouCouldDo-Regular";
+  color: #fff5f5;
+  font-weight: 700;
+  z-index: -999;
+}
+
+.button-more {
+  transition: all 0.4s;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 14px auto 50px;
+  background-color: #e40055;
+  color: #fff;
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.more-knowledge {
+  transition: all 0.4s ease-out;
+  display: none;
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.knowledge-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin-top: 60px;
+  margin: auto;
+  width: 1260px;
+}
+
+.first-img:nth-child(2) {
+  background: url(./img/new6-fx.jpg) no-repeat;
+  background-size: cover;
+}
+
+.ice-cream {
+  background: url(./img/new3-fx.jpg) no-repeat;
+  background-size: cover;
+  margin-top: -170px;
+}
+
+.first-img {
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  width: 400px;
+  height: 570px;
+  background-color: #e40055;
+  border-radius: 10px;
+}
+
+.second-img {
+  cursor: pointer;
+  width: 400px;
+  height: 280px;
+  background: url(./img/new5-F.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.indulge {
+  margin-top: 30px;
+  background: url(./img/new4-f.jpg);
+  background-size: cover;
+}
+
+.difference {
+  background: url(./img/new1-F.jpg);
+  background-size: cover;
+  margin-top: 30px;
+}
+
+.second-img .rise {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 80px;
+  height: 30px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #e40055;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.second-img .know {
+  text-align: left;
+  text-indent: 2em;
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  height: 80px;
+  color: #e40055;
+  font-weight: 700;
+  background-color: #fff;
+  line-height: 80px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.first-img img {
+  position: absolute;
+  width: 120px;
+  top: 30px;
+  left: 30px;
+}
+
+.first-img p {
+  font-size: 14px;
+  position: absolute;
+  left: 30px;
+  bottom: 110px;
+}
+
+.first-img:nth-child(2) p {
+  top: 40px;
+}
+
+.ice-cream p {
+  top: 40px;
+}
+
+.first-img h2 {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 700;
+  left: 30px;
+  bottom: 40px;
+}
+
+.first-img:nth-child(2) h2 {
+  top: 70px;
+}
+
+.ice-cream h2 {
+  top: 70px;
+}
+
+.vip {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vip-left,
+.vip-right {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+.vip-left img {
+  width: 100%;
+  height: 500px;
+}
+
+.crown {
+  text-align: center;
+  margin: 0 auto;
+  width: 130px;
+  height: 140px;
+  background: url(./img/icon-19.svg) no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.crown img {
+  width: 35%;
+  margin-top: 65px;
+}
+
+.vip-tit {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.vip-tit:nth-child(2) {
+  display: none;
+}
+
+.vip-tit p {
+  color: #e40055;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.vip-tit span {
+  font-size: 14px;
+  color: rgb(75, 75, 75);
+}
+
+.lf,
+.rt {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: aqua;
+  bottom: 30px;
+}
+
+.lf {
+  left: 47%;
+  background: url(./img/quan.png) no-repeat;
+  background-size: contain;
+}
+
+.rt {
+  left: 53%;
+  background: url(./img/quan.png) no-repeat;
+  background-size: contain;
+}
+
+.select .select-current {
+  background: url(./img/crown.png) no-repeat;
+  background-size: contain;
+}

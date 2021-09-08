@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  margin: 0 auto 150px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+/* 封面轮播图 */
+.lunbo {
+  width: 1350px;
+  height: 630px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+#index {
+  position: absolute;
+  left: 50px;
+  bottom: 107px;
+}
+#index li {
+  width: 20px;
+  height: 20px;
+  margin-right: 27px;
+  background-color: transparent;
+  display: inline-block;
+}
+.xiaoyuan {
+  position: absolute;
+  left: 50px;
+  bottom: 100px;
+}
+.xiaoyuan li {
+  width: 20px;
+  height: 20px;
+  margin-right: 27px;
+  border-radius: 100%;
+  background-color: white;
+  display: inline-block;
+}
+#img {
+  width: 5400px; /*不给宽高无法移动*/
+  height: 700px;
+  position: absolute; /*不定义absolute，js无法设置left和top*/
+  z-index: -1;
+  overflow: hidden;
+}
+#img li {
+  width: 1350px;
+  height: 700px;
+  float: left;
+  overflow: hidden;
+}
+#index .on {
+  background-image: url(https://www.mxbc.com/themes/cn/default/assets/images/icon-wg.svg);
+}
+img {
+  width: 100%;
+}
+.li-duanluo {
+  position: absolute;
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  bottom: 480px;
+  left: 100px;
+}
+.li-title {
+  position: absolute;
+  color: #e40055;
+  font-size: 100px;
+  font-weight: bold;
+  bottom: 350px;
+  left: 100px;
+}
+
+/* 奶源 */
+.naiyuan {
+  margin: 0 auto;
+  display: flex;
+}
+.pic {
+  width: 641px;
+  height: 577px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 150px 0 150px 20px;
+}
+.title {
+  color: #e40055;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 60px;
+}
+.txt {
+  margin-top: 0.9em;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* 热门产品 */
+.chanping-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.chanping {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cpbig-title {
+  margin: 50px 0 10px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.cpsmall-title {
+  letter-spacing: 1px;
+  line-height: 3.5;
+}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e40055;
+  text-align: center;
+  line-height: 1.5;
+}
+.info-three {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* 产业链 */
+.cyl-box {
+  margin: 0 50px;
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.cyl-icon {
+  width: 93px;
+  height: 104px;
+  margin: 0 auto;
+  position: relative;
+}
+.cyl-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.word-title {
+  color: #e40055;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* 成功之路 */
+.chenggong {
+  background-color: #fafafa;
+  padding-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chenggong-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.chenggong-infobox {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  color: white;
+}
+.row-cont {
+  width: 20%;
+  text-align: center;
+  background-color: #e40055;
+}
+.row-pic {
+  width: 20%;
+  overflow: hidden;
+}
+.row-pic > img {
+  width: 100%;
+  height: 100%;
+}
+.row-pic2 {
+  width: 40%;
+  overflow: hidden;
+}
+.row-pic2 > img {
+  width: 100%;
+  height: 100%;
+}
+.row-cont2 {
+  width: 40%;
+  text-align: center;
+  background-color: #e40055;
+}
+.chenggong-shuzi {
+  margin-top: 30px;
+  font-size: 6.77083vw;
+}
+.chenggong-wenzi {
+  font-size: 20px;
+  font-weight: bold;
+}
+.row-cont:hover{
+  background-color: #e4005477;
+}
+.row-cont2:hover{
+  background-color: #e4005477;
+}
+.row-pic:hover img{
+  transition-duration: 0.8s;
+  transform: scale(1.08);
+}
+
+.row-pic2:hover img{
+  transition-duration: 0.8s;
+  transform: scale(1.08);
+}
+/* 雪王头条 */
+.tt-box {
+  width: 30%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.pic-toutiao {
+  width: 100%;
+  height: 60%;
+}
+.pic-toutiao > img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.info-toutiao {
+  width: 100%;
+  height: 40%;
+  background-color: #fafafa;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+}
+.toutiao-time {
+  color: #e40055;
+  width: 23.25581%;
+  text-align: center;
+  margin: 30px 0 0 40px;
+}
+.toutiao-xinwen {
+  margin-left: 20px;
+  text-align: left;
+  margin: 30px 20px 0 20px;
+}
+.toutiao-xinwen > h3 {
+  font-size: 18px;
+  color: #e40055;
+  line-height: 1.66667;
+  letter-spacing: 1px;
+}
+.toutiao-xinwen > p {
+  font-size: 12px;
+  color: black;
+  line-height: 1.66667;
+  letter-spacing: 1px;
+  margin: 5px 0 10px;
+}
+
+.tt-box:hover .info-toutiao {
+  transition-duration: 0.8s;
+  background-color: #e40055;
+}
+.tt-box:hover .toutiao-time,
+.tt-box:hover .toutiao-xinwen > h3,
+.tt-box:hover .toutiao-xinwen > p {
+  transition-duration: 0.8s;
+  color: white;
+}

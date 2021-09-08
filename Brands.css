@@ -1,0 +1,416 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+@font-face {
+    font-family: FormiaScript;
+    src: url(./FormiaScript.otf);
+  }
+
+.enjoy{
+    width: 100%;
+    background: url(./img/enjoybg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.enjoy .container{
+    padding: 150px 20px;
+    text-align: center;
+}
+.enjoy .ej{
+    color: #FB8F8D;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 130px;
+    font-family: FormiaScript;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+.intro{
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.enjoy .container .intro{
+    line-height: 1.4;
+}
+.enjoy .container .intro{
+    margin-bottom: 25px;
+}
+.paragraph{
+    line-height: 1.875;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #555;
+}
+.txt{
+    color: #fff;
+}
+.enjoy .king{
+    position: absolute;
+    font-size: 16px;
+    right: 5em;
+    bottom: -1.55em;
+    width: 15.46875vw;
+}
+.enjoy .king img{
+    max-width: 100%;
+}
+
+.how{
+    padding-top: 100px;
+    text-align: center;
+}
+.pgbox{
+    width: 146px;
+    padding: 0 2em;
+    margin: 0px auto;
+    position: relative;
+}
+.pgbox .left{
+    position: absolute;
+    left: 0px;
+    top: 55px;
+}
+.pgbox .right{
+    position: absolute;
+    right: 0px;
+    top: 55px;
+}
+.how .intro{
+    color: #E40055;
+    margin-top: .33333em;
+}
+.how .paragraph{
+    margin-top: 45px;
+}
+.paragraph .blank{
+    height: 25px;
+    letter-spacing: 1px;
+}
+
+.bgcover{
+    position: relative;
+}
+.bgcover::before {
+    content: "";
+    display: block;
+    padding-top: 361px;
+    margin-top: 100px;
+}
+
+.bgcover .pic{
+    background-image: url(./img/bgcover.jpg);
+    background-position: left center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: play 20s linear infinite;
+    animation: play 20s linear infinite;
+}
+@keyframes play{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+
+.love{
+    padding-top: 100px;
+    text-align: center;
+}
+.love .intro{
+    color: #E40055;
+    margin-top: .33333em;
+}
+.love .paragraph{
+    margin-top: 45px;
+    color: #555;
+}
+
+.brandimg{
+    margin-top: 100px;
+}
+.brandimg .braimg{
+    background-image: url(./img/brandimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding-top: 41.8%;
+    position: relative;
+}
+.brandimg .braplay{
+    position: absolute;
+    right: -35px;
+    top: 48%;
+    width: 100px;
+    height: 120px;
+    background-color: #E40055;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.brandimg .braplay img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 23px;
+    bottom: 46px;
+    cursor: pointer;
+}
+
+.brandimg .bratxt{
+    display: inline-block;
+    padding: 45px 60px;
+    position: relative;
+}
+.brandimg .bratxt>p{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.brandimg .bratxt .intro{
+    color: #E40055;
+    margin-top: .33333em;
+    font-size: 34px;
+}
+.brandimg .bratxt .paragraph{
+    margin-top: 45px;
+    color: #555;
+}
+.brandimg .bralist {
+    width: 100%;
+}
+.brandimg .bralist ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.brandimg .bralist ul li{
+    width: 16.66%;
+    list-style-type: none;
+    display: block;
+    line-height: 0;
+}
+.brandimg .bralist ul li img{
+    width: 100%;
+}
+
+.culture{
+    margin-top: 80px;
+    padding-top: 30px;
+    text-align: center;
+}
+.culture .intro{
+    color: #E40055;
+    margin-top: .33333em;
+}
+.culture .boxlist{
+    width: 100%;
+    margin-top: 68px;
+    padding:0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.culture .boxlist .box{
+    width: 32%;
+    height: 255px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 8px 37px;
+}
+
+.culture .box:hover{
+    background-color: #E40055 ;
+    transition: all .4s ease-out;
+    transform: rotateX(-10deg) scale(1.02) translateX(0px) translateY(0px);
+}
+.culture .boxlist .box .dec{
+    display: inline-block;
+    vertical-align: middle;
+    width: 8em;
+    height: 8em;
+    background-color: #E40055;
+    position: relative;
+    border-radius: 50%;
+    top: -3em;
+}
+.culture .boxlist .box .dec img{
+    max-width: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 1.5em;
+    transform: translateX(-50%);
+}
+.culture .boxlist .box .title{
+    color: #E40055;
+    margin-bottom: .41667em;
+    font-weight: 700;
+    font-size: 18px;
+}
+.culture .box:hover .title{
+    color: white;
+}
+.culture .box:hover .paragraph{
+    color: white;
+}
+
+.concept{
+    width: 100%;
+    position: relative;
+}
+.concept .bannerbox{
+    margin-top: 75px;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    /* background-image: url(./img/Compress_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+}
+.concept .bannerbox img{
+    height: 600px;
+    object-fit: cover;
+    transform: translateX(-7%);
+}
+.concept .info{
+    background-color: #E40055;
+    font-size: 18px;
+    width: 18.5em;
+    height: 20.5em;
+    padding: 2em 2em 0 2em;
+    position: absolute;
+    left: 7.8125%;
+    bottom: 0;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    display: none;
+}
+/* .concept .info:first-child{
+    display: block;
+} */
+.concept .info .title{
+    font-weight: 700;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.concept .info p{
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.71429;
+    letter-spacing: 1px;
+}
+.concept .dots{
+    list-style-type: none;
+    position: absolute;
+    left: 8%;
+    bottom: 2.8em;
+    width: 21.5em;
+    padding-left: 2em;
+}
+.concept .dots li{
+    display: inline-block;
+    margin-right: 23px;
+}
+.concept .dots button{
+    cursor: pointer;
+    width: 1.1em;
+    height:1em;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.history{
+    margin-top: 80px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.history .intro{
+    color: #E40055;
+    margin-top: .33333em;
+}
+.history .hislist{
+    margin-top: 70px;
+    width: 100%;
+}
+.history .hislist ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 114px;
+    height: 48px;
+    border-top: 2px solid #F8F8F8;
+    margin: 0;
+    padding-top: 1em;
+    font-size: 16px;
+    font-weight: 700;
+    color: #E40055;
+    position: relative;
+}
+.history .hislist ul li .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #E40055;
+    position: absolute;
+    top: -6px;
+    left: 52px;
+    cursor: pointer;
+}
+.history .hiscontent{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 5px 120px;
+}
+
+.history .hiscontent .hisbox{
+    width: 303px;
+    height: 353px;
+    margin: 0 15px;
+    float: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fafafa;
+}
+.history .hiscontent .hisbox:hover{
+    background-color: #E40055;
+}
+.history .hiscontent .hisbox:hover p{
+    color: white;
+}
+
+.history .hiscontent .hisbox img{
+    width: 100%;
+}
+.history .hiscontent .hisbox p{
+    font-size: 12px;
+    line-height: 1.71429;
+    color: #555;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 30px 16px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+
+
+
+
